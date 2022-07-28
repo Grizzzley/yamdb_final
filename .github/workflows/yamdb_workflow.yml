@@ -1,8 +1,6 @@
-name: Yamdb workflow
+name: Django-app workflow
 
-on:
-  push:
-    branches: [ master ]
+on: [push]
 
 jobs:
   tests:
