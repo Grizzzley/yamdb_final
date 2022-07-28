@@ -5,7 +5,6 @@ from .models import (
     Review, Title, User
 )
 
-
 admin.site.register(Category)
 admin.site.register(Genre)
 admin.site.register(Title)
