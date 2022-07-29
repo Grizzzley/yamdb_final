@@ -1,4 +1,4 @@
-version: '3.7'
+version: '3.3'
 
 services:
   db:
@@ -9,7 +9,8 @@ services:
       - ./.env
       
   web:
-    image: grizzzley/api_yamdb:latest
+    # image: grizzzley/api_yamdb:latest
+    build: ../api_yamdb/
     restart: always
     volumes:
       - static_value:/app/static/
