@@ -1,6 +1,9 @@
 name: Django-app workflow
 
-on: [push]
+on:
+  push:
+  workflow_dispatch:
+
 
 jobs:
   tests:
@@ -39,6 +42,7 @@ jobs:
         uses: docker/build-push-action@v2 
         with:
           push: true
+          context: ./api_yamdb/
           tags: ${{ secrets.DOCKER_USERNAME }}/api_yamdb:latest
           
   deploy:
@@ -49,7 +53,7 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
-          username: ${{ secrets.USER }}
+          username: ${{ secrets.HOST_USERNAME }}
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
