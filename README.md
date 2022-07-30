@@ -1,9 +1,10 @@
 ---
 # api_yamdb with docker
 ## Описание
-Проект **YaMDb** собирает отзывы пользователей на различные произведения. Проект можно запустить из контейнера благодоря Docker compose.
-## Технологии
 ![Django-app workflow](https://github.com/Grizzzley/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+Проект **YaMDb** собирает отзывы пользователей на различные произведения. Проект можно запустить из контейнера благодоря Docker compose.
+Доступен по [ссылке](http://84.201.167.163/api/v1/)
+## Технологии
 Django
 Postgresql
 Nginx
