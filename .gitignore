@@ -146,7 +146,7 @@ dmypy.json
 .mypy_cache
 
 # папки со статикой и медиа
-# static/ # Trying to get redoc working again..
-posts/static/
-media/
+# static/ # Trying to get redoc and static working again..
+# posts/static/ # Trying to get redoc and static working again..
+# media/ # Trying to get redoc and static working again..
 
