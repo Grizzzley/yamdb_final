@@ -1,9 +1,7 @@
 name: Django-app workflow
 
-on:
-  push:
-  workflow_dispatch:
-
+on: [push]
+# Why I cant use workflow_dispatch here?
 
 jobs:
   tests:
