@@ -1,8 +1,7 @@
 name: Django-app workflow
 
-on: 
-  push:
-  workflow_dispatch:
+on: [push]
+# Nah, it doesnt go through pytests.. With workflow_dispatch..
 
 
 jobs:
